@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+body {
+    text-align: center;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+}
+
+div { 
+    position: absolute;
+    width: 500px;
+    height: 270px;
+    padding: 10px;
+    border: 5px double;
+    font-size: 23px;
+    text-align: justify;
+    top: 220px;
+    left: 350px;
+    visibility: hidden; /*Ocultando divs*/
+}
+
+div img {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    float: left;
+}
+
+#shelby {
+    background-color: rgb(38, 38, 38);
+    color: white;
+    border-color: red;
+}
+
+#pagany {
+    background-color: rgb(134, 130, 130);
+    color: black;
+    border-color: red;
+}
+
+#mclaren {
+    background-color: rgb(47, 47, 47);
+    color: rgb(255, 255, 255);
+    border-color: red;
+}
