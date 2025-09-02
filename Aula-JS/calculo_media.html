@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando Media das Notas</title>
+</head>
+<body>
+    <h1>Calculando Media das Notas</h1>
+
+    <script>
+       
+       let n1 = parseFloat(prompt("Nota Portugues: ")) 
+        let n2 = parseFloat(prompt("Nota Matematica: ")) 
+        let n3 = parseFloat(prompt("Nota Ingles: ")) 
+        let n4 = parseFloat(prompt("Nota Calculo: ")) 
+
+        let media = (n1 + n2 + n3 + n4 ) / 4;
+
+        document.write("A media das suas notas são: " +media + "<br>")
+        document.write("Nota de Portugues: " +n1 + "<br>")
+        document.write("Nota de Matematica: " +n2 + "<br>")
+        document.write("Nota de Ingles: " +n3 + "<br>")
+        document.write("Nota de Calculo: " +n4 + "<br>")
+
+        if( media >= 6){
+            document.write("Voce esta aprovado, Parabens!");
+        }else {
+            document.write("REPROVADO!");
+        }
+
+        /*let quantidade = parseInt(prompt("Quantas notas serão? "));
+        let soma = 0; 
+
+        for (let i = 1; i <quantidade + 1; i++ ) {
+            let numero = parseInt(prompt("Digite a nota: "+ i ))
+            soma = soma + numero; 
+        }
+
+        let Media = soma / quantidade; 
+
+        document.write("A media é: " +Media)*/
+
+
+    </script>   
+</body>
+</html>
