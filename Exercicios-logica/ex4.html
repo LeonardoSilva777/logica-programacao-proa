@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4 - Calculos</title>
+</head>
+<body>
+    <h1> Exercicio 4 </h1>
+    <p> 4 - Faça um programa que receba três notas de um aluno 
+        (cada nota de 0 a 10) e calcule a média ponderada considerando pesos 
+        2, 3 e 5 para as notas, respectivamente. </p>
+
+    <script>
+        
+        let n1 = parseFloat(prompt("Digite a primeira nota: "))
+        let n2 = parseFloat(prompt("Digite a segunda nota: "))
+        let n3 = parseFloat(prompt("Digite a terceira Nota: "))
+
+        media = ((n1 * 2) + (n2 * 3) + (n3 * 5)) / (2 + 3 + 5);
+
+        document.write(" A media ponderada das notas é: " + media + "<br>")
+        document.write("Nota 1: " + n1 + "<br>")
+        document.write("Nota 2: " + n2 + "<br>")
+        document.write("Nota 3: " + n3 + "<br>")
+
+
+
+    </script>        
+</body>
+</html>

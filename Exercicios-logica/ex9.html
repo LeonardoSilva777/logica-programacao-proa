@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9 - Deposito</title>
+</head>
+<body>
+    <h1>Exercicio 9 - Deposito</h1>
+    <p>9 - Crie um programa que leia o valor do depósito mensal em uma poupança e a taxa de juros mensal, e calcule o 
+        montante após 12 meses.</p>
+
+        <script>
+            let depo = parseFloat(prompt("Valor do Deposito Mensal para a poupança: "))
+            let temp = parseFloat(prompt("Quanto tempo voce deixara: "))
+
+            let calc = depo * Math.pow(1 + 0.005, temp) //função faz elevar um numero a potencia, Ex: 1 + 0.005 elevado
+                                                        // ao tanto de tempo que deixara guardado na poupança
+
+            document.write("Valor que deixara depositado: " +depo +"<br>")
+            document.write("Tempo que deixara na poupança: " +temp +"<br>")
+            document.write("saldo após: " + temp + " meses: R$" + calc.toFixed(2));
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5 - produto</title>
+</head>
+<body>
+
+
+   <h1> Exercicio 5</h1> 
+   <p>5 - Escreva um programa que leia o preço de um produto e a quantidade comprada, 
+    e calcule o valor total a ser pago com desconto de 10% se a quantidade for maior que 
+    10 unidades.</p>
+
+    <script>
+        let prod = prompt("Quantidade de Produtos: ")
+        let valor = parseFloat(prompt("Valor do Produto: "))
+
+        soma_valor = valor * prod 
+
+        if(prod >= 10) {
+            soma_valor = soma_valor * 0.90
+            document.write(soma_valor + "<br>")
+        }else {
+            document.write(soma_valor + "<br>")
+        }
+
+        document.write("Quantidade do produto: " +prod + "<br>")
+        document.write("Valor do produto: " +valor + "<br>")
+        document.write("Desconto aplicado: " + 0.90 + "<br>")
+
+    </script>
+
+</body>
+</html>

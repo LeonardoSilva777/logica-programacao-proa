@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7 - salario</title>
+</head>
+<body>
+    <h1>Exercicio 7 - Salario</h1>
+    <p> Faça um programa que receba o salário base de um funcionário e calcule o seu salário líquido,
+         considerando que o funcionário recebe 5% de comissão sobre o salário base. </p>
+
+
+    <script>
+
+        let salario = parseFloat(prompt("Coloque o valor do seu salario: "))
+
+        let salario_comissao = salario * 0.05
+
+        let desconto = salario - (salario * 0.11) - (salario * 0.075)
+        
+        document.write("Salario Bruto: " + salario +"<br>")
+        document.write("Salario Liquido depois do Desconto: " +desconto + "<br>")
+        document.write("Salario com 5% de comissão: "+ (desconto  + salario_comissao))
+
+
+    </script>
+</body>
+</html>
