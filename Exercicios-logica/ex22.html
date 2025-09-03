@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 22</title>
+</head>
+<body>
+    <h1>exercicio 22</h1>
+    <p>Faça um programa que receba o salário de um funcionário e exiba o valor 
+        do seu bônus. Se o salário for maior que R$ 2000, o bônus é de 10%, 
+        caso contrário, é de 5%</p>
+
+    <script>
+        let salario = parseFloat(prompt("Digite o valor do seu salario atualmente: "))
+
+        if(salario >= 100 && salario <=2000){
+            aumento = salario * 0.10
+            resultado = salario + aumento
+
+            document.write("Seu salario era de: R$"+salario+ " voce teve um aumento de 10%, então seu salario ficou em: R$"+resultado)
+        } else {
+            aumento = salario * 0.05
+            resultado = salario + aumento
+
+            document.write("Seu salario era de: "+salario+ " voce teve um aumento de 5%, então seu salario ficou em: "+resultado)
+        }
+    </script>
+</body>
+</html>

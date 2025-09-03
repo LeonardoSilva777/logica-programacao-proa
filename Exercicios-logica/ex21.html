@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 21</title>
+</head>
+<body>
+    <h1>Exercicio 21:</h1>
+    <p>Crie um programa que leia a idade de um grupo de pessoas e 
+        exiba quantas são menores de idade e quantas são maiores de idade.</p>
+    
+    <script>
+        let pessoas = parseInt(prompt("Quantas pessoas serão? "))
+        let maiores = 0
+        let menores = 0
+
+        for(let i = 1; i <= pessoas; i++){
+            let idade = parseInt(prompt("Idade da pessoa: "+i+ ":"))
+
+            if(idade <18){
+                menores++; //ta aumentando o valor da variavel menores
+            } else {
+                maiores++; //ta aumentando o valor da variavel maiores
+            }
+        }
+
+        document.write("Quantidade de pessoas: "+pessoas+ "<br>")
+        document.write("Menores de idade: "+menores+ "<br>Maiores de idade: " + maiores)
+    </script>
+</body>
+</html>

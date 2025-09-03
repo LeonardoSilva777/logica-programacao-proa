@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 26</title>
+</head>
+<body>
+    <h1>Exercicio 26</h1>
+    <p>Escreva um programa que leia o código de um produto e a quantidade
+         comprada, e exiba o valor total a ser pago. Considere que cada 
+         produto tem um preço diferente. </p>
+
+
+    <script>
+        let cod_prod = parseFloat(prompt("quantidade de produtos?"))
+        let qntd = 0; // começa com 0 produtos
+        total = 0; // começa com nenhum valor
+
+        for(let i = 1; i <= cod_prod; i++){
+            let valor = parseFloat(prompt("Valor do produto "+i+":"))
+            qntd++; // aumenta quantidade de produtos em 1
+
+            total += valor // soma o valor do produto ao total e com os produtos antigos
+        }
+
+        document.write("A quantidade de produtos é: "+qntd+ ", e o valor a ser pago é "+total) 
+    </script>     
+</body>
+</html>

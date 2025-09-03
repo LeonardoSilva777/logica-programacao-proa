@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semaforo usando if</title>
+</head>
+<body>
+    <h1>Testando semaforo usando JavaScript</h1>
+    <script>
+        let semaforo = prompt("Qual a cor do Sinal? ")
+
+        if(semaforo == "vermelho"){
+            document.write("FREIAAAAAAAAAAAAAAAAAAAAAAA!")
+        }else if(semaforo == "amarelo"){
+            document.write("Cuidado, esta quase fechando")
+        }else if(semaforo == "verde") {
+            document.write("pode ir")
+        }else { 
+            document.write("Algo de errado não esta certo, não existe cor de semaforo " + semaforo); 
+        }
+    </script>
+    
+</body>
+</html>

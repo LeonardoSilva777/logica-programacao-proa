@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 24</title>
+</head>
+<body>
+    <h1>Exercicio 24</h1>
+    <p>Crie um programa que leia três números inteiros e exiba-os em ordem crescente.</p>
+
+
+    <script>
+        let n1 = parseFloat(prompt("Primeiro numero: "))
+        let n2 = parseFloat(prompt("Segundo numero>: "))
+        let n3 = parseFloat(prompt("Terceiro numero: "))
+
+        if(n1 > n2 && n1 > n3 && n2>n3){
+            document.write("Numero 1: "+n1 + " é maior que numero 2: " +n2+ " que é maior que numero 3: "+n3)
+        }else if(n2 > n1 && n2 > n3 && n1> n3){
+            document.write("Numero 2: "+n2 + " é maior que numero 1: " +n1+ " que é maior que numero 3: "+n3)
+        }else {
+            document.write("Numero 3: "+n3 + " é maior que numero 2: " +n2+ " que é maior que numero 1: "+n1)
+        }
+    </script>
+</body>
+</html>

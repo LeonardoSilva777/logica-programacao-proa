@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 19</title>
+</head>
+<body>
+    <h1>Exercicio 19</h1>
+    <p>19 -  Faça um programa que receba três notas de um aluno e exiba 
+        se ele foi aprovado ou reprovado. A média para aprovação é 7. </p>
+
+    <script>
+        let n1 = parseFloat(prompt("Nota 1: ")) 
+        let n2 = parseFloat(prompt("Nota 2: ")) 
+        let n3 = parseFloat(prompt("Nota 3: ")) 
+        
+
+        let media = (n1 + n2 + n3 ) / 3;
+
+        document.write("A media das suas notas são: " +media + "<br>")
+        document.write("Nota 1: " +n1 + "<br>")
+        document.write("Nota 2: " +n2 + "<br>")
+        document.write("Nota 3: " +n3 + "<br>")
+        
+
+        if( media >= 7){
+            document.write("Voce esta aprovado, Parabens!");
+        }else if(media == 6){
+            document.write("Voce esta de recuperação");
+        }else{
+            document.write("REPROVADO!");
+        }
+    </script>
+</body>
+</html>
