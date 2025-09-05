@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 27</title>
+</head>
+<body>
+    <h1>Exercicio 27</h1>
+    <p>27 - Crie um programa que leia a idade de uma pessoa e seu sexo M ou F. Exiba uma mensagem
+        indicando se ela pode ou não se aposentar. Homens se aposentam com 65 anos e mulheres com 60
+    </p>
+
+    <script>
+        let sexo = prompt("Qual é seu genero? M ou F")
+
+        if(sexo == "M" || sexo == "masculino" || sexo == "Masculino" || sexo == "homem"){
+            let idade = parseInt(prompt("Senhor, Qual a sua idade? "))
+            if(idade <= 64){
+                document.write("Senhor voce não pode se aposentar")
+            }else{
+                document.write("Senhor voce ja pode curtir sua aposentadoria!!")
+            }
+        }else if(sexo == "F" || sexo == "feminino" || sexo == "Feminino" || sexo == "mulher"){
+           let idade = parseInt(prompt("Senhora, Qual a sua idade? ")) 
+           if(idade <= 59){
+            document.write("Senhora voce não pode se aposentar")
+           }else{
+            document.write("Senhora voce ja pode curtir sua aposentadoria!!")
+           }
+        } else {
+            document.write("Desculpe senhor(a), não consegui indentificar seu genero, por favor digite novamente!")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 31</title>
+</head>
+<body>
+    <h1>Exercicio 31</h1>
+    <p>Faça um programa que leia o valor do salário-mínimo e o salário de um funcionário,
+         e exiba quantos salários-mínimos ele recebe. 
+    </p>
+
+    <script>
+        let salario = parseFloat(prompt("Qual é seu salario atual:"))
+        let salario_m = 1518
+
+        let resultado = salario / salario_m
+
+        if(resultado < 1) {
+            document.write("O funcionario recebe menos que um salario minimo!")
+        }else{
+            document.write("Salario atual: R$"+salario+ "<br>")
+            document.write("O funcionario recebe: "+ resultado.toFixed(1)+ " salarios minimo.")
+        }
+
+    </script>
+</body>
+</html>

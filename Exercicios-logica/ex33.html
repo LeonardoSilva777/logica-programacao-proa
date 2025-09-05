@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 33</title>
+</head>
+<body>
+    <h1>Exercicio 33</h1>
+    <p> Crie um programa que leia o nome e o turno (M ou V) de um aluno e exiba uma 
+        mensagem de saudação de acordo com o turno. Matutino: "Bom dia, aluno", Vespertino: 
+        "Boa tarde, aluno". 
+    </p>
+
+
+    <script>
+        let nome = prompt("Qual seu nome: ")
+        let turno = prompt("Qual seu turno: [M] ou [V]")
+
+
+        if(turno == "M" || turno == "Matutino" || turno == "matutino"){
+            document.write("Bom dia "+nome)
+        }else {
+            document.write("Boa tarde "+nome)
+        }
+    </script>
+</body>
+</html>

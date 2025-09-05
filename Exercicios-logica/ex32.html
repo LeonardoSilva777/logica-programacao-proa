@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 32</title>
+</head>
+<body>
+    <h1>Exercicio 32</h1>
+    <p> Escreva um programa que leia a nota de um aluno em uma prova e exiba a sua 
+        conceituação conforme a tabela de notas. 
+    </p>
+
+    <script>
+        let nota = parseFloat(prompt("Qual a nota do aluno?"))
+
+        if (nota >= 9 && nota <= 10) {
+            document.write("Conceito: A");
+        } else if (nota >= 7) {
+            document.write("Conceito: B");
+        } else if (nota >= 5) {
+            document.write("Conceito: C");
+        } else if (nota >= 3) {
+            document.write("Conceito: D");
+        } else if (nota >= 0) {
+            document.write("Conceito: E");
+        } else {
+            document.write("Nota inválida!");
+}
+    </script>
+
+</body>
+</html>
