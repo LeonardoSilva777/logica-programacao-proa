@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercicio 9</h1>
+    <p>Crie um programa que leia o valor do salário mínimo e o valor do salário de um usuário, 
+        calcule a quantidade de salários mínimos esse usuário ganha e imprima o resultado. 
+        (Salário mínimo = R$1.212,00).</p>
+
+
+    <script>
+        let salario = parseFloat(prompt("Qual é seu salario atual:"))
+        let salario_m = 1212
+
+        let resultado = salario / salario_m
+
+        if(resultado < 1) {
+            document.write("O funcionario recebe menos que um salario minimo!")
+        }else{
+            document.write("Salario atual: R$"+salario+ "<br>")
+            document.write("O funcionario recebe: "+ resultado.toFixed(1)+ " salarios minimo.")
+        }
+    </script>
+</body>
+</html>

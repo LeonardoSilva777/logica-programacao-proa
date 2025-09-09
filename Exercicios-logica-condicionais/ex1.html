@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1 logica condicional</title>
+</head>
+<body>
+    <h1>Exercicio 1 Logica condicional</h1>
+    <p>Criar um programa em JS que informe a quantidade total de calorias de uma
+        refeição a partir que deverá informar o prato, a sobremesa e a bebida
+    </p>
+
+    <img src="img/ex1.png" alt="">
+    <br>
+
+    <script> //o array sempre vai ler começando do 0: 180[0], 230[1],250[2],350[3]
+        let pratos = [180, 230, 250, 350]
+        let sobremesas = [75,110,170,200]
+        let bebidas = [20,70,100,65]
+
+        let prato = parseInt(prompt("Escolha o prato: [1]Vegetariano, [2]Peixe, [3]Frango, [4]carne"))
+        let sobremesa = parseInt(prompt("Escolha a sobremesa: [1]Abacaxi, [2]Sorvete diet, [3]Mouse Diet, [4]Mouse/Chocolate"))
+        let bebida = parseInt(prompt("Escolha a bebida: [1]Chá, [2]Suco, [3]Refri, [4]Refri Diet"))
+        
+        if(prato > 4 || prato < 1){
+            document.write("Por favor digite um prato valido de 1 a 4 <br>" )
+        }
+
+        if(sobremesa > 4 || sobremesa <1){
+            document.write("Por favor digite uma sobremesa valida de 1 a 4<br>")
+        }
+            
+        if(bebida > 4 || bebida < 1){
+            document.write("Por favor digite uma bebida valida de 1 a 4<br>")
+        }
+        //calculo: ja que o array começa por indice 0, eu ajusto a escolha com o -1
+        let total = pratos[prato - 1] + sobremesas[sobremesa - 1] + bebidas[bebida - 1];
+
+        document.write("O total de calorias dessa refeição foi de: "+total+ " Cal")
+    </script>
+</body>
+</html>

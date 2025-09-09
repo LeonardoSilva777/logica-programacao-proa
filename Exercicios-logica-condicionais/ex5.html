@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+    <h1>Exercicio 5</h1>
+    <p>Crie um programa qem Javascript que leia a idade de uma pessoa e informe a sua classe eleitoral</p>
+
+    <script>
+        let idade = prompt("Qual sua idade para votar? ")
+        
+
+        if(idade < 16){
+            document.write("Pode votar nao")
+        } else if (idade >= 16 && idade < 18 || idade >= 65){
+            document.write("Voto Facultativo")
+        }else{
+            document.write("Voto NORMAL PAE VM QUERER")
+        }
+        
+    </script>
+</body>
+</html>

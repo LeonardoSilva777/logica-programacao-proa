@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+</head>
+<body>
+    <h1>Exercicio 8</h1>
+    <p>Escrever um programa que leia:
+    - a porcentagem do IPI a ser acrescido no valor das peças 
+    O programa deve calcular o valor total a ser pago e apresentar o resultado. 
+    Cálculo : (valor1*quant1 + valor2*quant2)*(IPI/100 + 1)
+    </p>
+
+
+    <script>
+        let ipi = parseFloat(prompt("Digite a % do IPI: (0% a 30%)"))
+        let v1 = parseFloat(prompt("Valor unitario do prouto 1: "))
+        let qntd1 =  parseInt(prompt("Quantidade do produto 1: "))
+        let v2 =  parseFloat(prompt("Valor unitario do prouto 2: "))
+        let qntd2 =  parseInt(prompt("Quantidade do produto 2: "))
+
+        document.write("Valor 1: R$"+ v1 +"<br>")
+        document.write("Valor 2: R$"+ v2+"<br>")
+        document.write("quantidade 1: "+ qntd1+"<br>")
+        document.write("quantidade 2: "+ qntd2+"<br>")
+ 
+        let result = ((v1 * qntd1) + (v2 * qntd2)) * (ipi/100 + 1);
+
+        document.write("Total a ser pago: R$" + result)
+
+    </script>
+</body>
+</html>

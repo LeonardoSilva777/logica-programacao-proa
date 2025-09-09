@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+    <h1>Exercicio 4</h1>
+    <p>Dados três valores A, B e C, construa um programa em 
+        Javascript, que mostre na tela os valores de forma descendente 
+        (do maior para o menor).
+    </p>
+
+
+    <script>
+        let A = parseFloat(prompt("Valor A: "))
+        let B = parseFloat(prompt("Valor B: "))
+        let C = parseFloat(prompt("Valor C: "))
+
+
+        if(A > B && A > C && B > C){
+            document.write("A:"+A+ "<br>")
+            document.write("B:"+B+ "<br>")
+            document.write("C:"+C+ "<br>")
+        } else if(B > A && B > C && A> C){
+            document.write("B:"+B+ "<br>")
+            document.write("A:"+A+ "<br>")
+            document.write("C:"+C+ "<br>")
+        }else if(C > B && C > A && B > A){
+            document.write("C:"+C+ "<br>")
+            document.write("B:"+B+ "<br>")
+            document.write("A:"+A+ "<br>")
+        }
+    </script>
+</body>
+</html>

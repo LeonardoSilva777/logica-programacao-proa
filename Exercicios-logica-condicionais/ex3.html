@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head> 
+<body>
+    <h1>Exercicio 3</h1>
+    <p>Faça um programa em java que leia o saldo medio de um cliente e calcule o valor de credito
+        de acordo com a tabela a seguir. Imprimir uma mensagem informando saldo medio e o valor 
+        de credito.
+    </p>
+    <img src="img/ex3.png" alt="">
+    <br>
+    <script>
+        let saldo = parseFloat(prompt("Digite o seu saldo medio: "))
+
+
+        if(saldo >= 0 && saldo <= 500){
+            document.write("Seu Saldo medio é: "+saldo+ "<br>")
+            document.write("Valor de credito: Nenhum!")
+        } else if(saldo >= 501 && saldo <= 1000){
+            credito = saldo * 0.3 //30%
+            total = saldo - credito
+            document.write("Seu Saldo medio é: "+saldo+ "<br>")
+            document.write("Valor de credito: "+total.toFixed(2))
+        } else if( saldo >= 1001 && saldo <= 3000){
+            credito = saldo * 0.4 //40%
+            total = saldo - credito
+            document.write("Seu Saldo medio é: "+saldo+ "<br>")
+            document.write("Valor de credito: "+total)
+        } else if( saldo >= 3001){
+            credito = saldo * 0.5 //50%
+            total = saldo - credito
+            document.write("Seu Saldo medio é: "+saldo+ "<br>")
+            document.write("Valor de credito: "+total)
+        }
+
+    </script>
+</body>
+</html>
