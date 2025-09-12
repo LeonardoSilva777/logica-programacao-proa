@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios Logica com FOR </title>
+</head>
+<body>
+    <h1>Exercicio 12</h1>
+    <p>Escreva um algoritmo que leia 20 numero de usuario 
+        e exiba quantos numero são pares</p>
+
+
+    <script>
+
+        let Pares = 0; 
+
+        for (let i = 1; i <= 20; i++) {
+            let numero = parseInt(prompt(`Digite o ${i}º número: `));
+
+            if (numero % 2 === 0) { 
+                Pares++; 
+            }
+        }
+            document.write("A quantidade de numeros pares é: "+Pares)
+        
+    </script>
+</body>
+</html>
