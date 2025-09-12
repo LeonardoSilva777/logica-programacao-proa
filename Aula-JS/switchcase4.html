@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macdonaldes</title>
+</head>
+<body>
+    <h1>Combos do McDonalds</h1>
+
+
+    <script>
+        let combo1 = "Mac oferta: Big Mac, McFritas Média, Coca-Cola 500ml : R$29,90"
+        let combo2 = "Big Box: 2 Big Mac, 2McFritas Média, 2Coca-Cola 500ml : R$46,90 "
+        let combo3 = "Combinho: XBurguer, McNuggets 6 unidades, McFritas Pequena, Coca-Cola 300ml : 19,90"
+        let combo4 = "Brabo Clube House: 1 Brabo Clube house, McFritas Grande, Coca-Cola 500ml, Casquinha: R$56,00"
+        let combo5 = "Mc Lanche Feliz: McLanceFeliz, McFritas Pequena, Suco de laranja 200ml, Danoninho: 19,90"
+
+        let combos = prompt("Qual combo voce vai escolher? [1], [2], [3], [4], [5]")
+
+        switch(combos){
+            case "1" :
+                document.write("Voce escolheu o combo numero 1: <br>")
+                document.write(combo1)
+                break;
+            case "2" :
+                document.write("Voce escolheu o combo numero 2: <br>")
+                document.write(combo2)
+                break;
+            case "3" :
+                document.write("Voce escolheu o combo numero 3: <br>")
+                document.write(combo3)
+                break;
+            case "4" :
+                document.write("Voce escolheu o combo numero 4: <br>")
+                document.write(combo4)
+                break;
+            case "5": 
+                document.write("Voce escolheu o combo numero 5: <br>" )
+                document.write(combo5)
+                break;
+            default : document.write("Não tem esse combo!") 
+
+            
+        }
+        
+
+    </script>
+</body>
+</html>
