@@ -10,9 +10,20 @@
 
 
     <script>
+        let maisNovoNome = "";
+        let maisNovaIdade = 9999; // começa com valor muito alto
 
+        for (let i = 0; i < 10; i++) {
+            let nome = prompt(`Digite o nome da pessoa ${i + 1}:`);
+            let idade = parseInt(prompt(`Digite a idade de ${nome}:`));
 
+            if (idade < maisNovaIdade) {
+                maisNovaIdade = idade;
+                maisNovoNome = nome;
+            }
+        }
 
+    document.write(`A pessoa mais nova é: ${maisNovoNome}`);
     </script>
 </body>
 </html>
