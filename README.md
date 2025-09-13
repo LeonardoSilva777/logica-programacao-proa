@@ -45,8 +45,6 @@ O repositório está organizado em pastas para facilitar a navegação e o estud
 ## 🎯 Objetivos do Repositório  
 
 - Consolidar o aprendizado de **lógica de programação com JavaScript**.  
-- Servir como um portfólio de evolução no aprendizado.  
-- Facilitar revisões e consultas futuras.  
 
 ---
 
