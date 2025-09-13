@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de Java Script</title>
+</head>
+<body>
+    <h1>Exercicio 25</h1>
+    <p>Escreva um programa que leia uma sequência de números do usuário e realize e a soma desses números. 
+    Encerre a execução quando um número negativo for digitado.
+    </p>
+
+
+    <script>
+        let soma = 0;
+
+        while (true) { // loop infinito até a condição de parada
+            let numero = parseInt(prompt("Digite um número (número negativo para parar): "));
+
+            if (numero < 0) {
+                break; // sai do loop quando o número for negativo
+            }
+
+            soma += numero; // soma enquanto for positivo
+        }
+
+        document.write(`A soma dos números digitados é: ${soma}`)
+        
+    </script>
+</body>
+</html>

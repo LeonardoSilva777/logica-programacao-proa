@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de Java Script</title>
+</head>
+<body>
+    <h1>Exercicio 18</h1>
+    <p>Escreva um programa que leia o nome e a idade de 10 pessoas e exiba o nome da pessoa mais nova. </p>
+
+
+    <script>
+        let maisNovoNome = "";
+        let maisNovaIdade = 9999; // começa com valor muito alto
+
+        for (let i = 0; i < 10; i++) {
+            let nome = prompt(`Digite o nome da pessoa ${i + 1}:`);
+            let idade = parseInt(prompt(`Digite a idade de ${nome}:`));
+
+            if (idade < maisNovaIdade) {
+                maisNovaIdade = idade;
+                maisNovoNome = nome;
+            }
+        }
+
+        document.write(`A pessoa mais nova é: ${maisNovoNome}`);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de Java Script</title>
+</head>
+<body>
+    <h1>Exercicio 11</h1>
+    <p>Escrever um programa que leia o nome de um vendedor, o seu salário fixo e o total de vendas efetuadas
+         por ele no mês (em dinheiro). Sabendo que este vendedor ganha 15% de comissão sobre suas vendas 
+         efetuadas, informar o seu nome, o salário fixo e salário no final do mês.
+    </p>
+
+
+    <script>
+        let nome = prompt("Qual o seu nome")
+        let fixo = parseFloat(prompt("Qual seu salario: "))
+        let comissao = parseFloat(prompt("Valor das vendas"))
+
+
+        let calc_c = comissao * 0.15
+
+        let calc_t = fixo + calc_c
+
+
+        document.write(`${nome}, o seu salario fixo é de: R$${fixo} e o valor total desse mes foi de: R$${calc_t}`)
+
+    </script>
+</body>
+</html>

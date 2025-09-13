@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de Java Script</title>
+</head>
+<body>
+    <h1>Exercicio 21</h1>
+    <p>A Loja Mamão com Açúcar está vendendo seus produtos em 5 (cinco) prestações sem juros. 
+        Faça um programa que receba um valor de uma compra e mostre o valor das prestações.
+    </p>
+
+
+    <script>
+        alert("Todas as compras com 5 prestações sem juros!")
+        let compra = parseFloat(prompt("Valor das compras: "))
+
+        let prestacao = compra/5
+
+        document.write(`Valor das prestações ficou em: R$${prestacao.toFixed(2)}`)
+
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de Java Script</title>
+</head>
+<body>
+    <h1>Exercicio 15</h1>
+    <p>Escreva um programa que leia a idade de 20 pessoas e exiba a soma das idades. </p>
+
+
+    <script>
+
+        soma = 0 
+        for(i = 1; i <=20; i++){
+            let idade = parseFloat(prompt("Digite a idade da pessoa "+i+":"))
+            soma += idade
+        }
+
+        document.write(`A soma da idade dos usuarios é de: ${soma}`)
+    </script>
+</body>
+</html>
