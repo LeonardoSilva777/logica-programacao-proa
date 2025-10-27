@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex9</title>
+</head>
+<body>
+    <h1>Ex9</h1>
+    <p> Crie um programa que leia o nome e a idade de 5 pessoas usando o loop "while" e exiba a média das idades.</p>
+    <script>
+        let nomes = []
+        let idades = []
+        let soma = 0
+
+        while(idades.length < 5){
+
+            let nome = prompt("Digite o nome da " + nomes.length + " ° criança")
+            nomes.push(nome)
+            let idade = parseInt(prompt("Digite a idade da " + idades.length + "° Criança"))
+            idades.push(idade)
+            soma += idade
+            }
+
+            let media = soma / idades.length
+
+            document.write("A media das idades é: " + media)
+
+
+    </script>
+</body>
+</html>

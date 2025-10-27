@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio4 </title>
+</head>
+<body>
+    <h1>ex 4</h1>
+    <p>faça um programa que leia 5 numeros inteiros usando while e calcule a media</p>
+
+    <script>
+            let soma = 0
+            let notas = []
+
+            while(notas.length < 5){
+                let valor = parseInt(prompt("Digite a " + notas.length + " nota do aluno: "))
+                notas.push(valor)
+                soma += valor;
+            }
+
+            let media = soma / notas.length
+            document.write("A media da nota é: " + media)
+    </script>
+</body>
+</html>

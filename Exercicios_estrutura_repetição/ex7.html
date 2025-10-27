@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex7</title>
+</head>
+<body>
+    <h1>Ex7</h1>
+    <p>7 Faça um programa que leia um número inteiro e exiba se ele é um número primo usando o loop "while".</p>
+    <script>
+        let num = parseInt(prompt("Digite seu número aqui: "))
+        let div= 1
+        let totalDiv = 0
+
+        while(div <= num){ 
+                if(num % div == 0){
+                    totalDiv += 1
+                } 
+                div += 1 
+            }
+
+            if(totalDiv == 2){ 
+                document.write(num + " é primo");
+            } else {
+                document.write(num + " não é primo");
+            }
+
+    </script>
+</body>
+</html>

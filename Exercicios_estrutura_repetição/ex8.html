@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex8</title>
+</head>
+<body>
+    <h1>Ex8</h1>
+    <p> Escreva um programa que leia um número inteiro e exiba a sequência de Fibonacci até o número lido usando o loop "while".</p>
+    <script>
+        let num = parseInt(prompt("Digite seu número: ")) // descobre o numero do user
+        let Primeiro_valor = 0 
+        let Segundo_Valor = 1 
+
+        while(Primeiro_valor <= num){
+
+            document.write(Primeiro_valor + "<br>")
+
+            let tempo = Primeiro_valor + Segundo_Valor 
+
+            Primeiro_valor = Segundo_Valor  
+            
+            Segundo_Valor = tempo 
+                
+            }
+
+    </script>
+</body>
+</html>
