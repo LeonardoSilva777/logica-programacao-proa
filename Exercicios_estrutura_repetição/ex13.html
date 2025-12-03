@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 13</title>
+</head>
+<body>
+    <h1>Exercicio 13</h1> 
+    <p>Faça um programa que leia um numero inteiro e exiba o seu digito eparadamente uando o loop while</p>
+
+    <script>
+        let num = parseInt(prompt("Digite um numero: "))
+
+        while(num > 0){
+            let numero = num % 10
+            document.write(numero + "<br>")
+            num = Math.floor(num / 10)
+        }
+    </script>
+</body>
+</html>

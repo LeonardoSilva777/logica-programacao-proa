@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 15</title>
+</head>
+<body>
+    <h1>Exercicio 15</h1>
+    <p>Crie um programa que leia o nome e a idade de varias pessoas usando o loop "while
+        até que o nome "fim" seeja informado. ao final exiba a meedia das idades.
+    </p>
+
+    <script>
+        let idade = []
+        let soma = 0
+        let nome = prompt("Seu nome: ")
+
+        while(nome != "fim"){
+            let idades = parseInt(prompt("Digite sua idade aqui: "))
+            idade.push(idades)
+            soma += idades
+            nome = prompt("Digite seu nome")
+        }
+
+        let media = soma / idade.length
+        document.write("Media das idades: "+ media.toFixed(2))
+    </script>
+</body>
+</html>
