@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 19</title>
+</head>
+<body>
+    <h1>Exercicio 19</h1>
+    <p>Faça um programa que leia 5 numeros inteiros usando do while e exiba a media aritmetica dos valores</p>
+
+    <script>
+        let num = []
+        let calc = 0
+
+        do{
+            let soma = parseInt(prompt("Digite o " + num.length + "numero: "))
+            num.push(soma)
+            calc += soma
+        }while(num.length <= 4)
+
+        let media = calc / num.length
+        document.write("Media: " + media)
+    </script>
+</body>
+</html>

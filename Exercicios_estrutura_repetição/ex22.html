@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 22</title>
+</head>
+<body>
+    <h1>exercicio 22</h1>
+    <p>Faça um programa que leia um número inteiro e exiba se ele é um número primo usando o loop "do-while".</p>
+
+    <script>
+        let num = parseFloat(prompt("Digite um número: "));
+        let div = 1;      
+        let total = 0;    
+
+        do {
+            if (num % div == 0) {
+                total += 1;
+            }
+            div++;
+        } while (div <= num);
+
+        if (total == 2) {
+            document.write("O número " + num + " é PRIMO.");
+        } else {
+            document.write("O número " + num + " NÃO É PRIMO.");
+        }
+    </script>
+</body>
+</html>
