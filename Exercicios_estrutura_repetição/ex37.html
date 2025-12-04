@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 37</title>
+</head>
+<body>
+    <h1>Exercicio 37</h1>
+    <p>Faça um programa que leia um número inteiro e exiba se ele é um número primo.</p>
+
+
+    <script>
+    let num = parseInt(prompt("Digite seu numero: "))
+    let total = 0
+    
+    for(let i = 1; i <= num; i++){
+        if(num % i == 0){
+            total++
+        }
+    }
+
+    if(total == 2){
+        document.write("O número " + num + " é PRIMO.")
+    } else {
+        document.write("O número " + num + " NÃO É PRIMO.")
+    }
+</script>
+</body>
+</html>
